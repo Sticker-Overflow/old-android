@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">Sticker Overflow</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="album_name">StickerOverflow</string>
+
+    <string name="hello">Hello World, PhotoIntentActivity!</string>
+    <string name="btnIntend">Take (big) Picture</string>
+    <string name="btnIntendS">Take (small) Picture</string>
+    <string name="btnIntendV">Take Video</string>
+    <string name="cannot">Cannot</string>
+
+
+
+    <string name="label_google_sign_in">Firebase + Google Sign In</string>
+    <string name="desc_google_sign_in">Use a Google Sign In credential to authenticate with Firebase.</string>
+
+    <string name="label_facebook_login">Firebase + Facebook Login</string>
+    <string name="desc_facebook_login">Use a Facebook Login credential to authenticate with Firebase.</string>
+
+    <string name="label_twitter_login">Firebase + Twitter Login</string>
+    <string name="desc_twitter_login">Use a Twitter Login credential to authenticate with Firebase.</string>
+
+    <string name="label_emailpassword">Email/Password Authentication</string>
+    <string name="desc_emailpassword">Use an email and password to authenticate with Firebase.</string>
+
+    <string name="label_phone_auth">Phone Number Authentication</string>
+    <string name="desc_phone_auth">Use a phone number to authenticate with Firebase.</string>
+
+    <string name="label_anonymous_auth">Anonymous Authentication</string>
+    <string name="desc_anonymous_auth">Sign in anonymously and then later upgrade to a full Firebase Auth user.</string>
+
+    <string name="label_custom_auth">Custom Authentication</string>
+    <string name="desc_custom_auth">Use a custom token signed by your own server to authenticate with Firebase.</string>
+
+    <string name="label_firebase_ui">FirebaseUI Auth</string>
+    <string name="desc_firebase_ui">Use the FirebaseUI-Android library to authenticate with Firebase.</string>
+
+    <string name="hint_user_id">User ID</string>
+    <string name="get_custom_token">Get Token</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="loading">Loading…</string>
+    <string name="custom_token">Custom Token</string>
+    <string name="signed_in">Signed In</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="token_null">Token: null</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="start_phone_auth">Start</string>
+    <string name="verify_phone_auth">Verify</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_verification_code">Verification Code</string>
+    <string name="status_code_sent">Code Sent</string>
+    <string name="status_verification_failed">Verification failed</string>
+    <string name="status_verification_succeeded">Verification succeeded</string>
+    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="instant_validation">(instant validation)</string>
+
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+
+    <string name="google_status_fmt">Google User: %s</string>
+    <string name="google_title_text">Google Sign In</string>
+
+    <string name="facebook_status_fmt">Facebook User: %s</string>
+    <string name="facebook_title_text">Facebook Login</string>
+
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="emailpassword_title_text">Email and Password</string>
+
+    <string name="phone_title_text">Phone Number</string>
+
+    <string name="twitter_status_fmt">Twitter User: %s</string>
+    <string name="twitter_title_text">Twitter Login</string>
+
+    <string name="firebaseui_status_fmt">Firebase User: %s</string>
+    <string name="firebaseui_title_text">FirebaseUI Auth</string>
+
+    <string name="id_fmt">User ID: %s</string>
+    <string name="email_fmt">Email: %s</string>
+
+    <string name="gauth_client_id">951520957692-5jbkuas612sf715rh86ds6hgnndhn2be.apps.googleusercontent.com</string>
+    <string name="noStickersText">The stickers are at yoga practice. Please stop by later.</string>
+    <string name="sticker_name">Sticker Name</string>
+    <string name="sticker_description">Sticker Description</string>
+    <string name="made_by">Made by</string>
+    <string name="hackathons_given_at">Hackathons given at</string>
+    <string name="noOrganizationsText">The organizations are on lunch break. Please check back later.</string>
+    <string name="organization_name">Organization Name</string>
+    <string name="visit_website">Visit Website</string>
+    <string name="organization_description">Organization Description</string>
+    <string name="this_organization_s_stickers">This organization\'s stickers</string>
+    <string name="hackathons_attended">Hackathons attended</string>
+    <string name="upcoming_hackathons">Upcoming hackathons</string>
+    <string name="android_studio">Android Studio</string>
+    <string name="android_studio_android_com">android.studio@android.com</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="noHackathonsText">The hackathons are busy right now. Please come back in a bit.</string>
+    <string name="hackathon_name">Hackathon Name</string>
+    <string name="date">Date</string>
+    <string name="location">Location</string>
+    <string name="stickers_at_this_hackathon">Stickers at this hackathon</string>
+    <string name="companies_at_this_hackathon">Companies at this hackathon</string>
+    <string name="your_stickers">Your Stickers</string>
+    <string name="your_hackathons">Your Hackathons</string>
+    <string name="noUsersText">No one uses this anyways</string>
+    <string name="message_user">Message User</string>
+    <string name="this_user_s_stickers">User\'s stickers</string>
+    <string name="user_name">User Name</string>
+    <string name="noMessagesText">You have no conversations</string>
+    <string name="stickers">Stickers</string>
+    <string name="organizers">Organizers</string>
+    <string name="sponsors">Sponsors</string>
+    <string name="members">Members</string>
+    <string name="admins">Admins</string>
+    <string name="hackathonsSponsored">Hackathons Sponsored</string>
+    <string name="organizedHackathons">Hackathons Organized</string>
+    <string name="noStickersFound">No Stickers Found</string>
+    <string name="noSponsorsFound">No Sponsors Found</string>
+    <string name="noOrganizersFound">No Organizers Found</string>
+    <string name="noAdminsFound">No Admins Currently</string>
+    <string name="noMembersFound">No Members Currently</string>
+    <string name="noHackathonsOrganized">No Hackathons Organized</string>
+    <string name="noHackathonsSponsored">No Hackathons Sponsored</string>
+    <string name="owner_count">Owner Count</string>
+    <string name="purchaseSticker">Purchase This Sticker</string>
+    <string name="noHackathonsGivenOutAt">Not Given Out At Any Hackathons Yet</string>
+    <string name="noOrganizersGivenByFound">No One Has Handed Out This Sticker</string>
+    <string name="noHackathonsAttended">No Hackathons Attended</string>
+    <string name="noHackathonsUpcoming">No Upcoming Hackathons</string>
+    <string name="noStickersForUserFound">Has No Stickers</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="noSponsorsText">No Sponsors Found</string>
+    <string name="sponsor_name">TODO</string>
+    <string name="sponsor_description">TODO</string>
+    <string name="this_sponsor_s_stickers">Stickers Made</string>
+    <string name="this_organizer_s_stickers">Stickers</string>
+    <string name="organizer_description">TODO</string>
+    <string name="organizer_name">TODO</string>
+    <string name="noHackathons">No Hackathons</string>
+    <string name="hackathons">Hackathons Sponsored</string>
+    <string name="hackathonsOrganized">Hackathons Organized</string>
+
+</resources>

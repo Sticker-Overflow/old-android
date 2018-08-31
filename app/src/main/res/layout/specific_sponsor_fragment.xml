@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sponsorDetailsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGrey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/sponsorDetailsContainerScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="28sp"
+                android:text="@string/sponsor_name" />
+
+            <Button
+                android:id="@+id/websiteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="@string/visit_website"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/websiteButton"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:textSize="18sp"
+                android:text="@string/sponsor_description" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorBlack"
+                android:layout_below="@id/description"
+                android:id="@+id/seperator"/>
+
+            <TextView
+                android:id="@+id/stickersTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seperator"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="@string/this_sponsor_s_stickers" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/stickers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/stickersTitle"
+                android:scrollbars="vertical"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/hackathonsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stickers"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="@string/hackathons" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/hackathons"
+                android:scrollbars="vertical"
+                android:layout_below="@id/hackathonsTitle"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/adminsTitle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/hackathons"-->
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="22sp"-->
+                <!--android:text="@string/admins" />-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/admins"-->
+                <!--android:scrollbars="vertical"-->
+                <!--android:layout_below="@id/adminsTitle"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:visibility="visible"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/membersTitle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/admins"-->
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="22sp"-->
+                <!--android:text="@string/members" />-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/members"-->
+                <!--android:scrollbars="vertical"-->
+                <!--android:layout_below="@id/membersTitle"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:visibility="visible"/>-->
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

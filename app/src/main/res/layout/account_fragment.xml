@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+
+   <LinearLayout
+       android:id="@+id/accountLayoutContainer"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <Button
+           android:id="@+id/your_stickers_button"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="50dp"
+           android:text="@string/your_stickers" />
+
+       <Button
+           android:id="@+id/your_hackathons_button"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/your_hackathons" />
+
+       <Button
+           android:id="@+id/signout_button"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/sign_out" />
+
+   </LinearLayout>
+
+</ScrollView>

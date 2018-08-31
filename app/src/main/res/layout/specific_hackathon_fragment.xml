@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hackathonDetailsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGrey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/hackathonDetailsContainerScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/splash"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="155dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="28sp"
+                android:text="@string/hackathon_name" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="@string/date" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="@string/location" />
+
+            <Button
+                android:id="@+id/websiteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/location"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="@string/visit_website"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorBlack"
+                android:layout_below="@id/websiteButton"
+                android:id="@+id/seperator"/>
+
+            <TextView
+                android:id="@+id/stickersTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seperator"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="@string/stickers" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/stickers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/stickersTitle"
+                android:scrollbars="vertical"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/organizersTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stickers"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="@string/organizers" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/organizers"
+                android:scrollbars="vertical"
+                android:layout_below="@id/organizersTitle"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/sponsorsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/organizers"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="@string/sponsors" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/sponsors"
+                android:scrollbars="vertical"
+                android:layout_below="@id/sponsorsTitle"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

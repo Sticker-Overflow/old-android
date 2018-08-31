@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@mipmap/ic_camera_black_24dp"
+            android:title="ID a Sticker" />
+
+        <item
+            android:id="@+id/nav_stickers"
+            android:icon="@mipmap/ic_photo_black_24dp"
+            android:title="Stickers" />
+
+        <item
+            android:id="@+id/nav_hackathons"
+            android:icon="@mipmap/ic_event_black_24dp"
+            android:title="Hackathons" />
+
+        <item
+            android:id="@+id/nav_organizers"
+            android:icon="@mipmap/ic_work_black_24dp"
+            android:title="Organizers" />
+
+        <item
+            android:id="@+id/nav_sponsors"
+            android:icon="@mipmap/ic_business_black_24dp"
+            android:title="Sponsors" />
+
+        <item
+            android:id="@+id/nav_users"
+            android:icon="@mipmap/ic_people_black_24dp"
+            android:title="Users" />
+
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@mipmap/ic_chat_black_24dp"
+            android:title="Chat" />
+
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@mipmap/ic_account_circle_black_24dp"
+            android:title="Account" />
+
+        <item
+            android:id="@+id/nav_signin"
+            android:icon="@mipmap/ic_person_black_24dp"
+            android:title="Sign In" />
+    </group>
+</menu>

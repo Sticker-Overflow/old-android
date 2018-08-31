@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stickerDetailsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGrey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/stickerDetailsContainerScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/stickerImage"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stickerImage"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="28sp"
+                android:text="@string/sticker_name" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:text="@string/sticker_description" />
+
+            <TextView
+                android:id="@+id/ownerCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/description"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:text="@string/owner_count" />
+
+            <Button
+                android:id="@+id/purchaseStickerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ownerCount"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="@string/purchaseSticker"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorBlack"
+                android:layout_below="@id/purchaseStickerButton"
+                android:id="@+id/seperator"/>
+
+            <TextView
+                android:id="@+id/organizationsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seperator"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="@string/made_by" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/organizations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/organizationsTitle"
+                android:scrollbars="vertical"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/hackathonsGivenAtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/organizations"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="@string/hackathons_given_at" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/hackathons"
+                android:scrollbars="vertical"
+                android:layout_below="@id/hackathonsGivenAtTitle"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
